@@ -7,10 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E9C39ED2298A3E1900B8017F /* EssentialFeed_KaiLearning.docc in Sources */ = {isa = PBXBuildFile; fileRef = E9C39ED1298A3E1900B8017F /* EssentialFeed_KaiLearning.docc */; };
 		E9C39ED8298A3E1900B8017F /* EssentialFeed_KaiLearning.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9C39ECD298A3E1900B8017F /* EssentialFeed_KaiLearning.framework */; };
-		E9C39EDD298A3E1900B8017F /* EssentialFeed_KaiLearningTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C39EDC298A3E1900B8017F /* EssentialFeed_KaiLearningTests.swift */; };
-		E9C39EDE298A3E1900B8017F /* EssentialFeed_KaiLearning.h in Headers */ = {isa = PBXBuildFile; fileRef = E9C39ED0298A3E1900B8017F /* EssentialFeed_KaiLearning.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E9C39EE8298A3E7900B8017F /* FeedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C39EE7298A3E7900B8017F /* FeedItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,10 +23,8 @@
 
 /* Begin PBXFileReference section */
 		E9C39ECD298A3E1900B8017F /* EssentialFeed_KaiLearning.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EssentialFeed_KaiLearning.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E9C39ED0298A3E1900B8017F /* EssentialFeed_KaiLearning.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EssentialFeed_KaiLearning.h; sourceTree = "<group>"; };
-		E9C39ED1298A3E1900B8017F /* EssentialFeed_KaiLearning.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = EssentialFeed_KaiLearning.docc; sourceTree = "<group>"; };
 		E9C39ED7298A3E1900B8017F /* EssentialFeed-KaiLearningTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "EssentialFeed-KaiLearningTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		E9C39EDC298A3E1900B8017F /* EssentialFeed_KaiLearningTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EssentialFeed_KaiLearningTests.swift; sourceTree = "<group>"; };
+		E9C39EE7298A3E7900B8017F /* FeedItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,8 +67,7 @@
 		E9C39ECF298A3E1900B8017F /* EssentialFeed-KaiLearning */ = {
 			isa = PBXGroup;
 			children = (
-				E9C39ED0298A3E1900B8017F /* EssentialFeed_KaiLearning.h */,
-				E9C39ED1298A3E1900B8017F /* EssentialFeed_KaiLearning.docc */,
+				E9C39EE7298A3E7900B8017F /* FeedItem.swift */,
 			);
 			path = "EssentialFeed-KaiLearning";
 			sourceTree = "<group>";
@@ -80,7 +75,6 @@
 		E9C39EDB298A3E1900B8017F /* EssentialFeed-KaiLearningTests */ = {
 			isa = PBXGroup;
 			children = (
-				E9C39EDC298A3E1900B8017F /* EssentialFeed_KaiLearningTests.swift */,
 			);
 			path = "EssentialFeed-KaiLearningTests";
 			sourceTree = "<group>";
@@ -92,7 +86,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E9C39EDE298A3E1900B8017F /* EssentialFeed_KaiLearning.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,6 +140,7 @@
 				TargetAttributes = {
 					E9C39ECC298A3E1900B8017F = {
 						CreatedOnToolsVersion = 14.2;
+						LastSwiftMigration = 1420;
 					};
 					E9C39ED6298A3E1900B8017F = {
 						CreatedOnToolsVersion = 14.2;
@@ -194,7 +188,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E9C39ED2298A3E1900B8017F /* EssentialFeed_KaiLearning.docc in Sources */,
+				E9C39EE8298A3E7900B8017F /* FeedItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,7 +196,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E9C39EDD298A3E1900B8017F /* EssentialFeed_KaiLearningTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +332,7 @@
 		E9C39EE2298A3E1900B8017F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -360,6 +354,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -367,6 +362,7 @@
 		E9C39EE3298A3E1900B8017F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -395,6 +391,7 @@
 		E9C39EE5298A3E1900B8017F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = TFAADZ4278;
@@ -410,6 +407,7 @@
 		E9C39EE6298A3E1900B8017F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = TFAADZ4278;
