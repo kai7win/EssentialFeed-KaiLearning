@@ -8,6 +8,7 @@
 import XCTest
 import EssentialFeed_KaiLearning
 
+
 extension FeedStoreSpecs where Self: XCTestCase {
 
     func assertThatRetrieveDeliversEmptyOnEmptyCache(on sut: FeedStore, file: StaticString = #file, line: UInt = #line) {
