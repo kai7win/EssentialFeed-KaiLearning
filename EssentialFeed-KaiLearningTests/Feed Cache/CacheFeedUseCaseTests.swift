@@ -7,10 +7,10 @@
 
 import XCTest
 import EssentialFeed_KaiLearning
- 
+
 
 final class CacheFeedUseCaseTests: XCTestCase {
-
+    
     func test_init_doesNotMessageStoreUponCreation(){
         let (_,store) = makeSUT()
         
@@ -42,7 +42,7 @@ final class CacheFeedUseCaseTests: XCTestCase {
         let timestamp = Date()
         let feed =  uniqueImageFeed()
         let (sut,store) = makeSUT(currentDate:{ timestamp })
-
+        
         sut.save(feed.models){ _ in }
         store.completeDeletionSuccessfully()
         
@@ -50,7 +50,7 @@ final class CacheFeedUseCaseTests: XCTestCase {
     }
     
     func test_save_failsOnDeletionError(){
-
+        
         let (sut,store) = makeSUT()
         let deletionError = anyNSError()
         
@@ -95,9 +95,9 @@ final class CacheFeedUseCaseTests: XCTestCase {
     func test_save_doesNotDeliverInsertionErrorAfterSUTInstanceHasBeenDeallocated(){
         let store = FeedStoreSpy()
         var sut:LocalFeedLoader? = LocalFeedLoader(store: store, currentDate: Date.init)
-        var receivedResults = [Error?]()
         
-        sut?.save(uniqueImageFeed().models, completion: { receivedResults.append($0)})
+        var receivedResults = [LocalFeedLoader.SaveResult]()
+        sut?.save(uniqueImageFeed().models) { receivedResults.append($0) }
         
         store.completeDeletionSuccessfully()
         sut = nil
@@ -120,17 +120,16 @@ final class CacheFeedUseCaseTests: XCTestCase {
     private func expect(_ sut:LocalFeedLoader,toCompleteWithError expectedError:NSError?,when action:() -> Void,file:StaticString = #filePath,line:UInt = #line){
         let exp = expectation(description: "wait for save completion")
         
-        var recrivedError:Error?
-        
-        sut.save(uniqueImageFeed().models){ error in
-            recrivedError = error
+        var receivedError: Error?
+        sut.save(uniqueImageFeed().models) { result in
+            if case let Result.failure(error) = result { receivedError = error }
             exp.fulfill()
         }
         
         action()
         wait(for: [exp], timeout: 1.0)
         
-        XCTAssertEqual(recrivedError as NSError?, expectedError,file: file,line: line)
+        XCTAssertEqual(receivedError as NSError?, expectedError, file: file, line: line)
     }
     
     
@@ -148,7 +147,7 @@ final class CacheFeedUseCaseTests: XCTestCase {
     private func anyURL() -> URL{
         return URL(string: "http://any-url.com")!
     }
-
+    
     private func anyNSError() -> NSError {
         return NSError(domain: "any error", code: 0)
     }
