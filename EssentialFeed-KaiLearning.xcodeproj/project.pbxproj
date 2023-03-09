@@ -31,6 +31,7 @@
 		E9C39EED298A44B000B8017F /* RemoteFeedLoaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C39EEC298A44B000B8017F /* RemoteFeedLoaderTests.swift */; };
 		E9C39EF0298A64F600B8017F /* RemoteFeedLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C39EEF298A64F600B8017F /* RemoteFeedLoader.swift */; };
 		EF6BF24929B9A5C1007C7A99 /* EssentialFeediOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF6BF24129B9A5C0007C7A99 /* EssentialFeediOS.framework */; };
+		EF6BF25729B9AFCD007C7A99 /* FeedViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6BF25629B9AFCD007C7A99 /* FeedViewControllerTests.swift */; };
 		EF7DF4C029B6E67F00C4DD2D /* FeedStoreSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7DF4BF29B6E67F00C4DD2D /* FeedStoreSpecs.swift */; };
 		EF7DF4C429B6EC2E00C4DD2D /* XCTestCase+FeedStoreSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7DF4C329B6EC2E00C4DD2D /* XCTestCase+FeedStoreSpecs.swift */; };
 		EF7DF4C629B6F36500C4DD2D /* XCTestCase+FailableRetrieveFeedStoreSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7DF4C529B6F36500C4DD2D /* XCTestCase+FailableRetrieveFeedStoreSpecs.swift */; };
@@ -110,6 +111,7 @@
 		E9C39EEF298A64F600B8017F /* RemoteFeedLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteFeedLoader.swift; sourceTree = "<group>"; };
 		EF6BF24129B9A5C0007C7A99 /* EssentialFeediOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EssentialFeediOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF6BF24829B9A5C1007C7A99 /* EssentialFeediOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EssentialFeediOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF6BF25629B9AFCD007C7A99 /* FeedViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewControllerTests.swift; sourceTree = "<group>"; };
 		EF7DF4BF29B6E67F00C4DD2D /* FeedStoreSpecs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedStoreSpecs.swift; sourceTree = "<group>"; };
 		EF7DF4C329B6EC2E00C4DD2D /* XCTestCase+FeedStoreSpecs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+FeedStoreSpecs.swift"; sourceTree = "<group>"; };
 		EF7DF4C529B6F36500C4DD2D /* XCTestCase+FailableRetrieveFeedStoreSpecs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+FailableRetrieveFeedStoreSpecs.swift"; sourceTree = "<group>"; };
@@ -314,6 +316,7 @@
 		EF6BF24C29B9A5C2007C7A99 /* EssentialFeediOSTests */ = {
 			isa = PBXGroup;
 			children = (
+				EF6BF25629B9AFCD007C7A99 /* FeedViewControllerTests.swift */,
 			);
 			path = EssentialFeediOSTests;
 			sourceTree = "<group>";
@@ -511,6 +514,7 @@
 					};
 					EF6BF24729B9A5C1007C7A99 = {
 						CreatedOnToolsVersion = 14.2;
+						LastSwiftMigration = 1420;
 					};
 					EFC0EB0429B82404006E271F = {
 						CreatedOnToolsVersion = 14.2;
@@ -653,6 +657,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF6BF25729B9AFCD007C7A99 /* FeedViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1018,16 +1023,23 @@
 		EF6BF25429B9A5C2007C7A99 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = TFAADZ4278;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = app.kai7.EssentialFeediOSTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1036,11 +1048,17 @@
 		EF6BF25529B9A5C2007C7A99 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = TFAADZ4278;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = app.kai7.EssentialFeediOSTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
