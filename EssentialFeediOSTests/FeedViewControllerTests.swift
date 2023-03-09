@@ -2,14 +2,14 @@
 //  FeedViewControllerTests.swift
 //  EssentialFeediOSTests
 //
-//  Created by 湯瑪士 on 2023/3/9.
+//  Created by Thomas on 2023/3/9.
 //
 
 import XCTest
 import UIKit
 import EssentialFeed_KaiLearning
 
-final class FeedViewController:UIViewController{
+final class FeedViewController:UITableViewController{
     
     private var loader: FeedViewControllerTests.LoaderSpy?
     
@@ -21,8 +21,15 @@ final class FeedViewController:UIViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        loader?.load{ _ in }
+        refreshControl = UIRefreshControl()
+        refreshControl?.addTarget(self, action: #selector(load), for: .valueChanged)
+        load()
     }
+ 
+    @objc private func load() {
+        loader?.load { _ in }
+    }
+    
 }
 
 final class FeedViewControllerTests:XCTestCase{
@@ -41,6 +48,20 @@ final class FeedViewControllerTests:XCTestCase{
         
         XCTAssertEqual(loader.loadCallCount, 1)
     }
+    
+    
+    func test_pullToRefresh_loadsFeed(){
+        let (sut, loader) = makeSUT()
+        sut.loadViewIfNeeded()
+        
+        sut.refreshControl?.allTargets.forEach({ target in
+            sut.refreshControl?.actions(forTarget: target, forControlEvent: .valueChanged)?.forEach{
+                (target as NSObject).perform(Selector($0))
+            }
+        })
+        XCTAssertEqual(loader.loadCallCount, 2)
+    }
+    
     
     // MARK: - Helpers
     
