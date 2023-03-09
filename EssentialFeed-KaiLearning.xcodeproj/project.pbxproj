@@ -51,6 +51,7 @@
 		EFD5E2E229B715F3001BCD98 /* FeedStoreSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96408F8299E02420080EFB2 /* FeedStoreSpy.swift */; };
 		EFD5E2E429B71816001BCD98 /* FeedStore.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EF7DF4CC29B7088B00C4DD2D /* FeedStore.xcdatamodeld */; };
 		EFD5E2E629B71D88001BCD98 /* FeedStoreSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7DF4BF29B6E67F00C4DD2D /* FeedStoreSpecs.swift */; };
+		EFE0B75A29B9DFCB008129EE /* EssentialFeed_KaiLearning.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9C39ECD298A3E1900B8017F /* EssentialFeed_KaiLearning.framework */; platformFilter = ios; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -156,6 +157,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFE0B75A29B9DFCB008129EE /* EssentialFeed_KaiLearning.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,6 +251,7 @@
 				EF6BF24229B9A5C1007C7A99 /* EssentialFeediOS */,
 				EF6BF24C29B9A5C2007C7A99 /* EssentialFeediOSTests */,
 				E9C39ECE298A3E1900B8017F /* Products */,
+				EFE0B75929B9DFCB008129EE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -358,6 +361,13 @@
 				EF7DF4CC29B7088B00C4DD2D /* FeedStore.xcdatamodeld */,
 			);
 			path = CoreData;
+			sourceTree = "<group>";
+		};
+		EFE0B75929B9DFCB008129EE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
