@@ -230,8 +230,8 @@
 			isa = PBXGroup;
 			children = (
 				DEFE38EE29BA9330002849DB /* FeedViewController.swift */,
-				DEAD07D229BC6F1E00AD035F /* UIView+Shimmering.swift */,
 				EFBA46E829BAC91500ED98D4 /* FeedImageCell.swift */,
+				DEAD07D229BC6F1E00AD035F /* UIView+Shimmering.swift */,
 			);
 			path = EssentialFeediOS;
 			sourceTree = "<group>";
