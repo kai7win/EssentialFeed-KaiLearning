@@ -2,7 +2,7 @@
 //  ManagedCache.swift
 //  EssentialFeed-KaiLearning
 //
-//  Created by 湯瑪士 on 2023/3/8.
+//  Created by Thomas on 2023/3/8.
 //
 
 import CoreData

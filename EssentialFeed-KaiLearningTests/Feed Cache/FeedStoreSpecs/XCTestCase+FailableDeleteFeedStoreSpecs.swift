@@ -2,7 +2,7 @@
 //  XCTestCase+FailableDeleteFeedStoreSpecs.swift
 //  EssentialFeed-KaiLearningTests
 //
-//  Created by 湯瑪士 on 2023/3/7.
+//  Created by Thomas on 2023/3/7.
 //
 
 import XCTest
