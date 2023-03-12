@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import EssentialFeed_KaiLearning
 
 public final class FeedViewController:UITableViewController, UITableViewDataSourcePrefetching{
     
