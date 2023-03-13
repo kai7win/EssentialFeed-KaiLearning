@@ -342,15 +342,23 @@
 		DEAD07F629BDCCEA00AD035F /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				DEAD07F729BDCD0200AD035F /* FeedViewModel.swift */,
 				DEAD07F929BDD2C700AD035F /* FeedImageViewModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
 		};
+		DEAD07FB29BEF51F00AD035F /* Feed Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				DEAD07F729BDCD0200AD035F /* FeedViewModel.swift */,
+			);
+			path = "Feed Presentation";
+			sourceTree = "<group>";
+		};
 		DEFE38ED29BA92C7002849DB /* EssentialFeediOS */ = {
 			isa = PBXGroup;
 			children = (
+				DEAD07FB29BEF51F00AD035F /* Feed Presentation */,
 				DEAD07EC29BD9E3D00AD035F /* Feed Image Loader */,
 				DEAD07EB29BD9DA100AD035F /* Feed UI */,
 			);
