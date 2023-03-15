@@ -7,10 +7,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--List View Controller-->
+        <!--Feed View Controller-->
         <scene sceneID="JYg-XP-w5C">
             <objects>
-                <tableViewController id="KKJ-vj-LV0" customClass="ListViewController" customModule="EssentialFeediOS" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="KKJ-vj-LV0" customClass="FeedViewController" customModule="EssentialFeediOS" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="580" sectionHeaderHeight="28" sectionFooterHeight="28" id="TaY-Mc-GY8">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -119,7 +119,6 @@ Location</string>
                         <connections>
                             <outlet property="dataSource" destination="KKJ-vj-LV0" id="Rzq-BY-2gz"/>
                             <outlet property="delegate" destination="KKJ-vj-LV0" id="XPV-dz-Mnf"/>
-                            <outlet property="prefetchDataSource" destination="KKJ-vj-LV0" id="QIr-gC-nA3"/>
                         </connections>
                     </tableView>
                     <refreshControl key="refreshControl" opaque="NO" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="by6-Ik-1Sq" userLabel="Refresh Control">
