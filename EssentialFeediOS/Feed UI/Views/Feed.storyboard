@@ -124,10 +124,20 @@ Location</string>
                     <refreshControl key="refreshControl" opaque="NO" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="by6-Ik-1Sq" userLabel="Refresh Control">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <connections>
+                            <action selector="refresh" destination="e4l-MS-uwz" eventType="valueChanged" id="ifc-rp-9MZ"/>
+                        </connections>
                     </refreshControl>
+                    <connections>
+                        <outlet property="refreshController" destination="e4l-MS-uwz" id="SM6-Lz-Hgl"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DtB-3V-QcX" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="wzr-eG-5O6"/>
+                <customObject id="e4l-MS-uwz" customClass="FeedRefreshViewController" customModule="EssentialFeediOS" customModuleProvider="target">
+                    <connections>
+                        <outlet property="view" destination="by6-Ik-1Sq" id="Ydl-Oy-vtg"/>
+                    </connections>
+                </customObject>
             </objects>
             <point key="canvasLocation" x="905" y="-27"/>
         </scene>
