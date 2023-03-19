@@ -72,6 +72,9 @@ Location</string>
                                                             <state key="normal" title="↻">
                                                                 <color key="titleColor" systemColor="systemBackgroundColor"/>
                                                             </state>
+                                                            <connections>
+                                                                <action selector="retryButtonTapped" destination="LJf-Ny-SW7" eventType="touchUpInside" id="cCW-2T-ISp"/>
+                                                            </connections>
                                                         </button>
                                                     </subviews>
                                                     <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
@@ -114,6 +117,14 @@ Location</string>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <accessibility key="accessibilityConfiguration" identifier="feed-image-cell"/>
+                                <connections>
+                                    <outlet property="descriptionLabel" destination="sE1-1y-XGo" id="aJi-yE-rzU"/>
+                                    <outlet property="feedImageContainer" destination="rvG-i9-vta" id="mAa-81-XyW"/>
+                                    <outlet property="feedImageRetryButton" destination="yXD-Xa-Cdf" id="e1A-t7-gd9"/>
+                                    <outlet property="feedImageView" destination="Hap-hq-NZD" id="y7L-NI-Jte"/>
+                                    <outlet property="locationContainer" destination="Emw-du-8a2" id="qYk-Pj-Zpo"/>
+                                    <outlet property="locationLabel" destination="pKG-Fr-6g7" id="NKn-rp-deC"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
