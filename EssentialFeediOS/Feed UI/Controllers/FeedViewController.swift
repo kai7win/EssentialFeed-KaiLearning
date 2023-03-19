@@ -26,7 +26,6 @@ public final class FeedViewController:UITableViewController, UITableViewDataSour
     public override func viewDidLoad() {
         super.viewDidLoad()
         
-        tableView.prefetchDataSource = self
         refresh()
     }
     
