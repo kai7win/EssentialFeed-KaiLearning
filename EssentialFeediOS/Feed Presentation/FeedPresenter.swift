@@ -5,6 +5,7 @@
 //  Created by Kai Chi Tsao on 2023/3/13.
 //
 
+import Foundation
 import EssentialFeed_KaiLearning
 
 
@@ -28,9 +29,12 @@ final class FeedPresenter{
     }
     
     static var title: String {
-        return "My Feed"
+        return NSLocalizedString("FEED_VIEW_TITLE",
+                                 tableName: "Feed",
+                                 bundle: Bundle(for: FeedPresenter.self),
+                                 comment: "Title for the feed view")
     }
-
+    
     
     func didStarLoadingFeed(){
         loadingView.display(FeedLoadingViewModel(isLoading: true))
@@ -40,7 +44,7 @@ final class FeedPresenter{
         feedView.display(FeedViewModel(feed: feed))
         loadingView.display(FeedLoadingViewModel(isLoading: false))
     }
-
+    
     func didFinishLoadingFeed(with error:Error){
         loadingView.display(FeedLoadingViewModel(isLoading: false))
     }
