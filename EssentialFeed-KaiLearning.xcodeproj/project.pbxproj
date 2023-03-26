@@ -115,6 +115,7 @@
 		DE035F5529D0F79C00A2FCD7 /* FeedUIIntegrationTests+Localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FeedUIIntegrationTests+Localization.swift"; sourceTree = "<group>"; };
 		DE035F5829D0FC2A00A2FCD7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Feed.strings; sourceTree = "<group>"; };
 		DE035F5A29D0FC6900A2FCD7 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Feed.strings"; sourceTree = "<group>"; };
+		DE035F5B29D0FCC500A2FCD7 /* el */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = el; path = el.lproj/Feed.strings; sourceTree = "<group>"; };
 		DE68D54129973412008F9F77 /* CacheFeedUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheFeedUseCaseTests.swift; sourceTree = "<group>"; };
 		DE77342E29C7096E00C5A22C /* UITableView+Dequeueing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Dequeueing.swift"; sourceTree = "<group>"; };
 		DE77343029C70AD300C5A22C /* UIImageView+Animations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Animations.swift"; sourceTree = "<group>"; };
@@ -697,6 +698,7 @@
 				en,
 				Base,
 				"pt-BR",
+				el,
 			);
 			mainGroup = E9C39EC3298A3E1800B8017F;
 			productRefGroup = E9C39ECE298A3E1900B8017F /* Products */;
@@ -898,6 +900,7 @@
 			children = (
 				DE035F5829D0FC2A00A2FCD7 /* en */,
 				DE035F5A29D0FC6900A2FCD7 /* pt-BR */,
+				DE035F5B29D0FCC500A2FCD7 /* el */,
 			);
 			name = Feed.strings;
 			sourceTree = "<group>";
