@@ -1,0 +1,9 @@
+/* 
+  Feed.strings
+  EssentialFeed-KaiLearning
+
+  Created by Kai Chi Tsao on 2023/4/7.
+  
+*/
+"FEED_VIEW_TITLE" = "Το Feed μου";
+"FEED_VIEW_CONNECTION_ERROR" = "Δεν ήταν δυνατή η σύνδεση στο διακομιστή";

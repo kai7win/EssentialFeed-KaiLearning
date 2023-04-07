@@ -1,0 +1,9 @@
+/* 
+  Feed.strings
+  EssentialFeed-KaiLearning
+
+  Created by Kai Chi Tsao on 2023/4/7.
+  
+*/
+"FEED_VIEW_TITLE" = "My Feed";
+"FEED_VIEW_CONNECTION_ERROR" = "Couldn't connect to server";
