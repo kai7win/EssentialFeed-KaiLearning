@@ -102,7 +102,7 @@ final class FeedUIIntegrationTests:XCTestCase{
         
         sut.loadViewIfNeeded()
         loader.completeFeedLoading(with: [image0, image1])
-        
+          
         XCTAssertEqual(loader.loadedImageURLs, [], "Expected no image URL requests until views become visible")
         
         sut.simulateFeedImageViewVisible(at: 0)
