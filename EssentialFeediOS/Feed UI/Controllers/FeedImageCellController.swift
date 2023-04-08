@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import EssentialFeed_KaiLearning
 
 protocol FeedImageCellControllerDelegate {
     func didRequestImage()
