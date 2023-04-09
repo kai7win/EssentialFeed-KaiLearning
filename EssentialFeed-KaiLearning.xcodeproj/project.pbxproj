@@ -404,13 +404,6 @@
 			path = "Feed UI";
 			sourceTree = "<group>";
 		};
-		DEAD07EC29BD9E3D00AD035F /* Feed Image Loader */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "Feed Image Loader";
-			sourceTree = "<group>";
-		};
 		DEAD07F329BDA5CC00AD035F /* Composers */ = {
 			isa = PBXGroup;
 			children = (
@@ -427,7 +420,6 @@
 		DEFE38ED29BA92C7002849DB /* EssentialFeediOS */ = {
 			isa = PBXGroup;
 			children = (
-				DEAD07EC29BD9E3D00AD035F /* Feed Image Loader */,
 				DEAD07EB29BD9DA100AD035F /* Feed UI */,
 			);
 			path = EssentialFeediOS;
