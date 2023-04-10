@@ -11,7 +11,6 @@ import EssentialFeed_KaiLearning
 class LoadFeedImageDataFromRemoteUseCaseTests: XCTestCase {
     func test_init_doesNotPerformAnyURLRequest() {
         let (_, client) = makeSUT()
-        
         XCTAssertTrue(client.requestedURLs.isEmpty)
     }
     
