@@ -8,7 +8,6 @@
 import XCTest
 import EssentialFeed_KaiLearning
 
-
 class RemoteFeedImageDataLoaderTests: XCTestCase {
     func test_init_doesNotPerformAnyURLRequest() {
         let (_, client) = makeSUT()
