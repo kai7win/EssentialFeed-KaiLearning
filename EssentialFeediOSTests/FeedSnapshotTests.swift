@@ -26,6 +26,8 @@ class FeedSnapshotTests:XCTestCase{
         record(snapshot: sut.snapshot(), named: "FEED_WITH_CONTENT")
     }
 
+
+
     
     // MARK: - Helpers
     private func makeSUT() -> FeedViewController {
