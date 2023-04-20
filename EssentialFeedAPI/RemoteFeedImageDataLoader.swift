@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import EssentialFeed_KaiLearning
 
 public final class RemoteFeedImageDataLoader: FeedImageDataLoader {
     private let client: HTTPClient

@@ -7,6 +7,8 @@
 
 import Foundation
 import EssentialFeed_KaiLearning
+import EssentialFeedAPI
+
 
 class HTTPClientSpy: HTTPClient {
     private struct Task: HTTPClientTask {

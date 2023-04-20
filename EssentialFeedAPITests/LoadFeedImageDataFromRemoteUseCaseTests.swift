@@ -7,6 +7,7 @@
 
 import XCTest
 import EssentialFeed_KaiLearning
+import EssentialFeedAPI
 
 class LoadFeedImageDataFromRemoteUseCaseTests: XCTestCase {
     func test_init_doesNotPerformAnyURLRequest() {
