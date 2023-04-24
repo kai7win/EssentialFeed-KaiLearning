@@ -24,7 +24,7 @@ class EssentialFeedAPIEndToEndTests: XCTestCase {
             XCTAssertEqual(imageFeed[5], expectedImage(at:5))
             XCTAssertEqual(imageFeed[6], expectedImage(at:6))
             XCTAssertEqual(imageFeed[7], expectedImage(at:7))
-          
+            
             
         case let.failure(error)?:
             XCTFail("Expected successful feed result,got \(error) instead")
@@ -46,28 +46,28 @@ class EssentialFeedAPIEndToEndTests: XCTestCase {
             XCTFail("Expected successful image data result, got no result instead")
         }
     }
-
+    
     // MARK: - Helper
     
-    private func getFeedResult(file: StaticString = #file, line: UInt = #line) -> FeedLoader.Result? {
-            let client = ephemeralClient()
-            let exp = expectation(description: "Wait for load completion")
-
-            var receivedResult: FeedLoader.Result?
-            client.get(from: feedTestServerURL) { result in
-                receivedResult = result.flatMap { (data, response) in
-                    do {
-                        return .success(try FeedItemsMapper.map(data, from: response))
-                    } catch {
-                        return .failure(error)
-                    }
+    private func getFeedResult(file: StaticString = #file, line: UInt = #line) -> Swift.Result<[FeedImage], Error>? {
+        let client = ephemeralClient()
+        let exp = expectation(description: "Wait for load completion")
+        
+        var receivedResult: Swift.Result<[FeedImage], Error>?
+        client.get(from: feedTestServerURL) { result in
+            receivedResult = result.flatMap { (data, response) in
+                do {
+                    return .success(try FeedItemsMapper.map(data, from: response))
+                } catch {
+                    return .failure(error)
                 }
-                exp.fulfill()
             }
-            wait(for: [exp], timeout: 5.0)
-
-            return receivedResult
+            exp.fulfill()
         }
+        wait(for: [exp], timeout: 5.0)
+        
+        return receivedResult
+    }
     
     private func getFeedImageDataResult(file: StaticString = #file, line: UInt = #line) -> FeedImageDataLoader.Result? {
         
@@ -76,7 +76,7 @@ class EssentialFeedAPIEndToEndTests: XCTestCase {
         
         let exp = expectation(description: "Wait for load completion")
         let url = feedTestServerURL.appendingPathComponent("73A7F70C-75DA-4C2E-B5A3-EED40DC53AA6/image")
-
+        
         var receivedResult: FeedImageDataLoader.Result?
         _ = loader.loadImageData(from: url) { result in
             receivedResult = result
