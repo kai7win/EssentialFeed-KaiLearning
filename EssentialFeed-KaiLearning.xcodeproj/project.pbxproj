@@ -49,7 +49,6 @@
 		DEE5EAF229F0ED1B000C9A21 /* EssentialFeed_KaiLearning.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E9C39ECD298A3E1900B8017F /* EssentialFeed_KaiLearning.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		DEE5EAF629F0EDD5000C9A21 /* URLSessionHTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA52547298F4E2A00600B80 /* URLSessionHTTPClient.swift */; };
 		DEE5EAF729F0EDD5000C9A21 /* RemoteFeedImageDataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE80A71229E4CDBA00C842EE /* RemoteFeedImageDataLoader.swift */; };
-		DEE5EAF829F0EDD5000C9A21 /* RemoteFeedLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C39EEF298A64F600B8017F /* RemoteFeedLoader.swift */; };
 		DEE5EAFA29F0EDD5000C9A21 /* FeedItemsMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA5253F298DEC2D00600B80 /* FeedItemsMapper.swift */; };
 		DEE5EAFB29F0EDD5000C9A21 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA5253D298DEB7C00600B80 /* HTTPClient.swift */; };
 		DEE5EAFD29F0EDF2000C9A21 /* HTTPURLResponse+StatusCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE80A71529E4D40A00C842EE /* HTTPURLResponse+StatusCode.swift */; };
@@ -60,7 +59,6 @@
 		DEE5EB0429F0F016000C9A21 /* SharedTestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE380429B347B7002849DB /* SharedTestHelpers.swift */; };
 		DEE5EB0529F0F030000C9A21 /* XCTestCase+MemoryLeakTracking.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA52545298F119500600B80 /* XCTestCase+MemoryLeakTracking.swift */; };
 		DEE5EB0D29F623E3000C9A21 /* ImageCommentsMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE5EB0C29F623E3000C9A21 /* ImageCommentsMapper.swift */; };
-		DEE5EB0F29F623FE000C9A21 /* RemoteImageCommentsLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE5EB0E29F623FE000C9A21 /* RemoteImageCommentsLoader.swift */; };
 		DEE5EB1329F63316000C9A21 /* ImageComment.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE5EB1229F63316000C9A21 /* ImageComment.swift */; };
 		DEE5EB1C29F6426C000C9A21 /* RemoteLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE5EB1B29F6426C000C9A21 /* RemoteLoader.swift */; };
 		DEE5EB1E29F6428E000C9A21 /* RemoteLoaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE5EB1D29F6428E000C9A21 /* RemoteLoaderTests.swift */; };
@@ -215,7 +213,6 @@
 		DEE5EADC29F0ECC6000C9A21 /* EssentialFeedAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EssentialFeedAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEE5EAE329F0ECC7000C9A21 /* EssentialFeedAPITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EssentialFeedAPITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEE5EB0C29F623E3000C9A21 /* ImageCommentsMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCommentsMapper.swift; sourceTree = "<group>"; };
-		DEE5EB0E29F623FE000C9A21 /* RemoteImageCommentsLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteImageCommentsLoader.swift; sourceTree = "<group>"; };
 		DEE5EB1229F63316000C9A21 /* ImageComment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageComment.swift; sourceTree = "<group>"; };
 		DEE5EB1B29F6426C000C9A21 /* RemoteLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteLoader.swift; sourceTree = "<group>"; };
 		DEE5EB1D29F6428E000C9A21 /* RemoteLoaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteLoaderTests.swift; sourceTree = "<group>"; };
@@ -235,7 +232,6 @@
 		E9C39ED7298A3E1900B8017F /* EssentialFeed-KaiLearningTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "EssentialFeed-KaiLearningTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9C39EE7298A3E7900B8017F /* FeedImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedImage.swift; sourceTree = "<group>"; };
 		E9C39EE9298A3F3D00B8017F /* FeedLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedLoader.swift; sourceTree = "<group>"; };
-		E9C39EEF298A64F600B8017F /* RemoteFeedLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteFeedLoader.swift; sourceTree = "<group>"; };
 		EF2F005A29C1BB1000064CBC /* Feed.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Feed.storyboard; sourceTree = "<group>"; };
 		EF2F005C29C1BBB600064CBC /* Feed.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Feed.xcassets; sourceTree = "<group>"; };
 		EF6BF24129B9A5C0007C7A99 /* EssentialFeediOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EssentialFeediOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -457,7 +453,6 @@
 				DEE5EB1529F63920000C9A21 /* Shared API Infra */,
 				DEE5EB1429F63903000C9A21 /* Shared API */,
 				DE80A71429E4D3FA00C842EE /* Helpers */,
-				E9C39EEF298A64F600B8017F /* RemoteFeedLoader.swift */,
 				DEA5253F298DEC2D00600B80 /* FeedItemsMapper.swift */,
 				DE80A71229E4CDBA00C842EE /* RemoteFeedImageDataLoader.swift */,
 			);
@@ -522,7 +517,6 @@
 			isa = PBXGroup;
 			children = (
 				DEE5EB0C29F623E3000C9A21 /* ImageCommentsMapper.swift */,
-				DEE5EB0E29F623FE000C9A21 /* RemoteImageCommentsLoader.swift */,
 			);
 			path = "Image Comments API";
 			sourceTree = "<group>";
@@ -1007,12 +1001,10 @@
 			files = (
 				DEE5EAFA29F0EDD5000C9A21 /* FeedItemsMapper.swift in Sources */,
 				DEE5EB1C29F6426C000C9A21 /* RemoteLoader.swift in Sources */,
-				DEE5EB0F29F623FE000C9A21 /* RemoteImageCommentsLoader.swift in Sources */,
 				DEE5EAF729F0EDD5000C9A21 /* RemoteFeedImageDataLoader.swift in Sources */,
 				DEE5EB0D29F623E3000C9A21 /* ImageCommentsMapper.swift in Sources */,
 				DEE5EAFD29F0EDF2000C9A21 /* HTTPURLResponse+StatusCode.swift in Sources */,
 				DEE5EAFB29F0EDD5000C9A21 /* HTTPClient.swift in Sources */,
-				DEE5EAF829F0EDD5000C9A21 /* RemoteFeedLoader.swift in Sources */,
 				DEE5EAF629F0EDD5000C9A21 /* URLSessionHTTPClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1235,7 +1227,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = app.kai7.EssentialFeedAPI;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
@@ -1268,7 +1260,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = app.kai7.EssentialFeedAPI;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";

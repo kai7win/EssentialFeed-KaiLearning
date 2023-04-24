@@ -21,6 +21,13 @@
             BlueprintName = "EssentialFeed-KaiLearning"
             ReferencedContainer = "container:EssentialFeed-KaiLearning.xcodeproj">
          </BuildableReference>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "DEE5EADB29F0ECC6000C9A21"
+            BuildableName = "EssentialFeedAPI.framework"
+            BlueprintName = "EssentialFeedAPI"
+            ReferencedContainer = "container:EssentialFeed-KaiLearning.xcodeproj">
+         </BuildableReference>
       </CodeCoverageTargets>
       <Testables>
          <TestableReference
