@@ -1,0 +1,9 @@
+/* 
+  Shared.strings
+  EssentialFeed-KaiLearning
+
+  Created by Kai Chi Tsao on 2023/5/3.
+  
+*/
+
+"GENERIC_CONNECTION_ERROR" = "Couldn't connect to server";
