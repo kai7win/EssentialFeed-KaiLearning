@@ -69,9 +69,10 @@
 		DEF5893B2A01C97800ED3598 /* ResourceErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF5893A2A01C97800ED3598 /* ResourceErrorView.swift */; };
 		DEF5893D2A01C99B00ED3598 /* ResourceErrorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF5893C2A01C99B00ED3598 /* ResourceErrorViewModel.swift */; };
 		DEF589402A05D92400ED3598 /* UIViewController+Snapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF5893F2A05D92400ED3598 /* UIViewController+Snapshot.swift */; };
-		DEF589432A07001600ED3598 /* ImageComments.strings in Resources */ = {isa = PBXBuildFile; fileRef = DEF589422A07001600ED3598 /* ImageComments.strings */; };
 		DEF589452A07003C00ED3598 /* ImageCommentsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF589442A07003C00ED3598 /* ImageCommentsPresenter.swift */; };
 		DEF589482A0700CA00ED3598 /* ImageCommentsPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF589472A0700CA00ED3598 /* ImageCommentsPresenterTests.swift */; };
+		DEF589492A07017300ED3598 /* ImageComments.strings in Resources */ = {isa = PBXBuildFile; fileRef = DEF5894B2A07017300ED3598 /* ImageComments.strings */; };
+		DEF5894F2A0701CD00ED3598 /* ImageCommentsLocalizationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF5894E2A0701CD00ED3598 /* ImageCommentsLocalizationTests.swift */; };
 		DEFE380129B33386002849DB /* ValidateFeedCacheUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE380029B33386002849DB /* ValidateFeedCacheUseCaseTests.swift */; };
 		DEFE380329B341C0002849DB /* FeedCacheTestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE380229B341C0002849DB /* FeedCacheTestHelpers.swift */; };
 		DEFE380529B347B7002849DB /* SharedTestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE380429B347B7002849DB /* SharedTestHelpers.swift */; };
@@ -232,9 +233,12 @@
 		DEF5893A2A01C97800ED3598 /* ResourceErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourceErrorView.swift; sourceTree = "<group>"; };
 		DEF5893C2A01C99B00ED3598 /* ResourceErrorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourceErrorViewModel.swift; sourceTree = "<group>"; };
 		DEF5893F2A05D92400ED3598 /* UIViewController+Snapshot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Snapshot.swift"; sourceTree = "<group>"; };
-		DEF589422A07001600ED3598 /* ImageComments.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = ImageComments.strings; sourceTree = "<group>"; };
 		DEF589442A07003C00ED3598 /* ImageCommentsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCommentsPresenter.swift; sourceTree = "<group>"; };
 		DEF589472A0700CA00ED3598 /* ImageCommentsPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCommentsPresenterTests.swift; sourceTree = "<group>"; };
+		DEF5894A2A07017300ED3598 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/ImageComments.strings; sourceTree = "<group>"; };
+		DEF5894C2A07017700ED3598 /* el */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = el; path = el.lproj/ImageComments.strings; sourceTree = "<group>"; };
+		DEF5894D2A07017800ED3598 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/ImageComments.strings"; sourceTree = "<group>"; };
+		DEF5894E2A0701CD00ED3598 /* ImageCommentsLocalizationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCommentsLocalizationTests.swift; sourceTree = "<group>"; };
 		DEFE380029B33386002849DB /* ValidateFeedCacheUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidateFeedCacheUseCaseTests.swift; sourceTree = "<group>"; };
 		DEFE380229B341C0002849DB /* FeedCacheTestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCacheTestHelpers.swift; sourceTree = "<group>"; };
 		DEFE380429B347B7002849DB /* SharedTestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedTestHelpers.swift; sourceTree = "<group>"; };
@@ -567,7 +571,7 @@
 		DEF589412A06FFD900ED3598 /* Image Comments Presentation */ = {
 			isa = PBXGroup;
 			children = (
-				DEF589422A07001600ED3598 /* ImageComments.strings */,
+				DEF5894B2A07017300ED3598 /* ImageComments.strings */,
 				DEF589442A07003C00ED3598 /* ImageCommentsPresenter.swift */,
 			);
 			path = "Image Comments Presentation";
@@ -577,6 +581,7 @@
 			isa = PBXGroup;
 			children = (
 				DEF589472A0700CA00ED3598 /* ImageCommentsPresenterTests.swift */,
+				DEF5894E2A0701CD00ED3598 /* ImageCommentsLocalizationTests.swift */,
 			);
 			path = "Image Comments Presentation";
 			sourceTree = "<group>";
@@ -1006,7 +1011,7 @@
 			files = (
 				DE78369E29DFEE69000CD51C /* Feed.strings in Resources */,
 				DEF5892F2A01C05B00ED3598 /* Shared.strings in Resources */,
-				DEF589432A07001600ED3598 /* ImageComments.strings in Resources */,
+				DEF589492A07017300ED3598 /* ImageComments.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1134,6 +1139,7 @@
 				DE78369329DFDB77000CD51C /* FeedPresenterTests.swift in Sources */,
 				EFD5E2E429B71816001BCD98 /* FeedStore.xcdatamodeld in Sources */,
 				DEF589482A0700CA00ED3598 /* ImageCommentsPresenterTests.swift in Sources */,
+				DEF5894F2A0701CD00ED3598 /* ImageCommentsLocalizationTests.swift in Sources */,
 				DEFE380529B347B7002849DB /* SharedTestHelpers.swift in Sources */,
 				DE68D54229973412008F9F77 /* CacheFeedUseCaseTests.swift in Sources */,
 				EF7DF4CA29B700CA00C4DD2D /* XCTestCase+FailableDeleteFeedStoreSpecs.swift in Sources */,
@@ -1241,6 +1247,16 @@
 				DEF589332A01C05F00ED3598 /* pt-BR */,
 			);
 			name = Shared.strings;
+			sourceTree = "<group>";
+		};
+		DEF5894B2A07017300ED3598 /* ImageComments.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DEF5894A2A07017300ED3598 /* en */,
+				DEF5894C2A07017700ED3598 /* el */,
+				DEF5894D2A07017800ED3598 /* pt-BR */,
+			);
+			name = ImageComments.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
