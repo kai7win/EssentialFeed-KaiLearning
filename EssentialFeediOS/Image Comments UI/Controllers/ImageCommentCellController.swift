@@ -9,6 +9,7 @@ import UIKit
 import EssentialFeed_KaiLearning
 
 public class ImageCommentCellController: CellController {
+    
     private let model: ImageCommentViewModel
 
     public init(model: ImageCommentViewModel) {
@@ -23,11 +24,4 @@ public class ImageCommentCellController: CellController {
         return cell
     }
 
-    public func preload() {
-
-    }
-
-    public func cancelLoad() {
-
-    }
 }
