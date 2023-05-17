@@ -8,7 +8,7 @@
 import UIKit
 import EssentialFeed_KaiLearning
 
-public class ImageCommentCellController:NSObject,CellController {
+public class ImageCommentCellController:NSObject,UITableViewDataSource {
     
     private let model: ImageCommentViewModel
     
