@@ -25,7 +25,7 @@ public final class FeedImageCellController:NSObject{
         self.delegate = delegate
     }
 }
-    
+
 extension FeedImageCellController: UITableViewDataSource, UITableViewDelegate, UITableViewDataSourcePrefetching {
     
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -40,6 +40,11 @@ extension FeedImageCellController: UITableViewDataSource, UITableViewDelegate, U
         cell?.onRetry = { [weak self] in
             self?.delegate.didRequestImage()
         }
+        
+        cell?.onReuse = { [weak self] in
+            self?.releaseCellForReuse()
+        }
+        
         delegate.didRequestImage()
         return cell!
     }
