@@ -49,7 +49,6 @@ public final class ListViewController:UITableViewController, UITableViewDataSour
         tableView.sizeTableHeaderToFit()
     }
     
-    
     public override func traitCollectionDidChange(_ previous: UITraitCollection?) {
         if previous?.preferredContentSizeCategory != traitCollection.preferredContentSizeCategory {
             tableView.reloadData()
@@ -64,7 +63,12 @@ public final class ListViewController:UITableViewController, UITableViewDataSour
         var snapshot = NSDiffableDataSourceSnapshot<Int, CellController>()
         snapshot.appendSections([0])
         snapshot.appendItems(cellControllers, toSection: 0)
-        dataSource.apply(snapshot)
+        
+        if #available(iOS 15.0, *) {
+            dataSource.applySnapshotUsingReloadData(snapshot)
+        } else {
+            dataSource.apply(snapshot)
+        }
     }
     
     public func display(_ viewModel:ResourceLoadingViewModel) {
@@ -74,7 +78,6 @@ public final class ListViewController:UITableViewController, UITableViewDataSour
     public func display(_ viewModel: ResourceErrorViewModel) {
         errorView.message = viewModel.message
     }
-    
     
     public override func tableView(_ tableView: UITableView, didEndDisplaying cell: UITableViewCell, forRowAt indexPath: IndexPath) {
         let dl = cellController(at: indexPath)?.delegate
