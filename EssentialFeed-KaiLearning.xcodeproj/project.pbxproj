@@ -35,6 +35,10 @@
 		DE2580412A1B308500CF73AD /* ImageCommentsEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2580402A1B308500CF73AD /* ImageCommentsEndpoint.swift */; };
 		DE2580442A1B30EB00CF73AD /* FeedEndpointTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2580432A1B30EB00CF73AD /* FeedEndpointTests.swift */; };
 		DE2580472A1B313300CF73AD /* ImageCommentsEndpointTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2580462A1B313300CF73AD /* ImageCommentsEndpointTests.swift */; };
+		DE2580492A1B376B00CF73AD /* LoadMoreCellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2580482A1B376B00CF73AD /* LoadMoreCellController.swift */; };
+		DE25804B2A1B378D00CF73AD /* LoadMoreCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE25804A2A1B378D00CF73AD /* LoadMoreCell.swift */; };
+		DE25804E2A1B387600CF73AD /* FEED_WITH_LOAD_MORE_INDICATOR_dark.png in Resources */ = {isa = PBXBuildFile; fileRef = DE25804C2A1B387600CF73AD /* FEED_WITH_LOAD_MORE_INDICATOR_dark.png */; };
+		DE25804F2A1B387600CF73AD /* FEED_WITH_LOAD_MORE_INDICATOR_light.png in Resources */ = {isa = PBXBuildFile; fileRef = DE25804D2A1B387600CF73AD /* FEED_WITH_LOAD_MORE_INDICATOR_light.png */; };
 		DE68D54229973412008F9F77 /* CacheFeedUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE68D54129973412008F9F77 /* CacheFeedUseCaseTests.swift */; };
 		DE77342F29C7096E00C5A22C /* UITableView+Dequeueing.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE77342E29C7096E00C5A22C /* UITableView+Dequeueing.swift */; };
 		DE77343129C70AD300C5A22C /* UIImageView+Animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE77343029C70AD300C5A22C /* UIImageView+Animations.swift */; };
@@ -217,6 +221,10 @@
 		DE2580402A1B308500CF73AD /* ImageCommentsEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCommentsEndpoint.swift; sourceTree = "<group>"; };
 		DE2580432A1B30EB00CF73AD /* FeedEndpointTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedEndpointTests.swift; sourceTree = "<group>"; };
 		DE2580462A1B313300CF73AD /* ImageCommentsEndpointTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCommentsEndpointTests.swift; sourceTree = "<group>"; };
+		DE2580482A1B376B00CF73AD /* LoadMoreCellController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadMoreCellController.swift; sourceTree = "<group>"; };
+		DE25804A2A1B378D00CF73AD /* LoadMoreCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadMoreCell.swift; sourceTree = "<group>"; };
+		DE25804C2A1B387600CF73AD /* FEED_WITH_LOAD_MORE_INDICATOR_dark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FEED_WITH_LOAD_MORE_INDICATOR_dark.png; sourceTree = "<group>"; };
+		DE25804D2A1B387600CF73AD /* FEED_WITH_LOAD_MORE_INDICATOR_light.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FEED_WITH_LOAD_MORE_INDICATOR_light.png; sourceTree = "<group>"; };
 		DE68D54129973412008F9F77 /* CacheFeedUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheFeedUseCaseTests.swift; sourceTree = "<group>"; };
 		DE77342E29C7096E00C5A22C /* UITableView+Dequeueing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Dequeueing.swift"; sourceTree = "<group>"; };
 		DE77343029C70AD300C5A22C /* UIImageView+Animations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Animations.swift"; sourceTree = "<group>"; };
@@ -448,6 +456,8 @@
 		DE257F2A2A13585D00CF73AD /* snapshots */ = {
 			isa = PBXGroup;
 			children = (
+				DE25804C2A1B387600CF73AD /* FEED_WITH_LOAD_MORE_INDICATOR_dark.png */,
+				DE25804D2A1B387600CF73AD /* FEED_WITH_LOAD_MORE_INDICATOR_light.png */,
 				DE257F2B2A13585D00CF73AD /* FEED_WITH_FAILED_IMAGE_LOADING_dark.png */,
 				DE257F2C2A13585D00CF73AD /* FEED_WITH_CONTENT_dark.png */,
 				DE257F2D2A13585D00CF73AD /* FEED_WITH_CONTENT_light.png */,
@@ -587,6 +597,7 @@
 			isa = PBXGroup;
 			children = (
 				DEAD07F129BDA31B00AD035F /* FeedImageCellController.swift */,
+				DE2580482A1B376B00CF73AD /* LoadMoreCellController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -596,6 +607,7 @@
 			children = (
 				DE19399829E0EB42009420B8 /* Helpers */,
 				EFBA46E829BAC91500ED98D4 /* FeedImageCell.swift */,
+				DE25804A2A1B378D00CF73AD /* LoadMoreCell.swift */,
 				EF2F005A29C1BB1000064CBC /* Feed.storyboard */,
 				EF2F005C29C1BBB600064CBC /* Feed.xcassets */,
 			);
@@ -1189,10 +1201,12 @@
 				DE257F2F2A13585D00CF73AD /* FEED_WITH_FAILED_IMAGE_LOADING_dark.png in Resources */,
 				DE257F3A2A13586A00CF73AD /* LIST_WITH_ERROR_MESSAGE_dark.png in Resources */,
 				DE2580332A135B2A00CF73AD /* IMAGE_COMMENTS_light.png in Resources */,
+				DE25804F2A1B387600CF73AD /* FEED_WITH_LOAD_MORE_INDICATOR_light.png in Resources */,
 				DE257F312A13585D00CF73AD /* FEED_WITH_CONTENT_light.png in Resources */,
 				DE257F302A13585D00CF73AD /* FEED_WITH_CONTENT_dark.png in Resources */,
 				DE257F382A13586A00CF73AD /* EMPTY_LIST_dark.png in Resources */,
 				DE257F392A13586A00CF73AD /* LIST_WITH_ERROR_MESSAGE_light.png in Resources */,
+				DE25804E2A1B387600CF73AD /* FEED_WITH_LOAD_MORE_INDICATOR_dark.png in Resources */,
 				DE2580322A135B2A00CF73AD /* IMAGE_COMMENTS_dark.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1323,7 +1337,9 @@
 				DEE5EAD029EF41A8000C9A21 /* UITableView+HeaderSizing.swift in Sources */,
 				DE77342F29C7096E00C5A22C /* UITableView+Dequeueing.swift in Sources */,
 				DE19399A29E0EBD4009420B8 /* UIRefreshControl+Helpers.swift in Sources */,
+				DE25804B2A1B378D00CF73AD /* LoadMoreCell.swift in Sources */,
 				DE2580392A16DAB000CF73AD /* UIView+Container.swift in Sources */,
+				DE2580492A1B376B00CF73AD /* LoadMoreCellController.swift in Sources */,
 				DE2580352A158CF200CF73AD /* CellController.swift in Sources */,
 				DEAD07D329BC6F1E00AD035F /* UIView+Shimmering.swift in Sources */,
 				DEFE38EF29BA9330002849DB /* ListViewController.swift in Sources */,
