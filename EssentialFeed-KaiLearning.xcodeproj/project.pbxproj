@@ -58,7 +58,7 @@
 		DE80A72229E50C9300C842EE /* FeedImageDataStoreSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE80A72129E50C9300C842EE /* FeedImageDataStoreSpy.swift */; };
 		DE80A72429E50D5D00C842EE /* CacheFeedImageDataUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE80A72329E50D5D00C842EE /* CacheFeedImageDataUseCaseTests.swift */; };
 		DE80A72629E539D000C842EE /* CoreDataFeedImageDataStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE80A72529E539D000C842EE /* CoreDataFeedImageDataStoreTests.swift */; };
-		DE80A72829E53B2B00C842EE /* CoreDataFeedStore+FeedImageDataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE80A72729E53B2B00C842EE /* CoreDataFeedStore+FeedImageDataLoader.swift */; };
+		DE80A72829E53B2B00C842EE /* CoreDataFeedStore+FeedImageDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE80A72729E53B2B00C842EE /* CoreDataFeedStore+FeedImageDataStore.swift */; };
 		DE80A72A29E53F3400C842EE /* CoreDataFeedStore+FeedStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE80A72929E53F3400C842EE /* CoreDataFeedStore+FeedStore.swift */; };
 		DE80A78429E931FB00C842EE /* FeedCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE80A78329E931FB00C842EE /* FeedCache.swift */; };
 		DE80A78E29E9435C00C842EE /* FeedImageDataCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE80A78D29E9435C00C842EE /* FeedImageDataCache.swift */; };
@@ -253,7 +253,7 @@
 		DE80A72129E50C9300C842EE /* FeedImageDataStoreSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedImageDataStoreSpy.swift; sourceTree = "<group>"; };
 		DE80A72329E50D5D00C842EE /* CacheFeedImageDataUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheFeedImageDataUseCaseTests.swift; sourceTree = "<group>"; };
 		DE80A72529E539D000C842EE /* CoreDataFeedImageDataStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataFeedImageDataStoreTests.swift; sourceTree = "<group>"; };
-		DE80A72729E53B2B00C842EE /* CoreDataFeedStore+FeedImageDataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CoreDataFeedStore+FeedImageDataLoader.swift"; sourceTree = "<group>"; };
+		DE80A72729E53B2B00C842EE /* CoreDataFeedStore+FeedImageDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CoreDataFeedStore+FeedImageDataStore.swift"; sourceTree = "<group>"; };
 		DE80A72929E53F3400C842EE /* CoreDataFeedStore+FeedStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CoreDataFeedStore+FeedStore.swift"; sourceTree = "<group>"; };
 		DE80A78329E931FB00C842EE /* FeedCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCache.swift; sourceTree = "<group>"; };
 		DE80A78D29E9435C00C842EE /* FeedImageDataCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedImageDataCache.swift; sourceTree = "<group>"; };
@@ -900,7 +900,7 @@
 				EFC0EAFB29B81CC6006E271F /* CoreDataHelper.swift */,
 				EFC0EAFD29B81EAA006E271F /* ManagedCache.swift */,
 				EFC0EAFF29B81F78006E271F /* ManagedFeedImage.swift */,
-				DE80A72729E53B2B00C842EE /* CoreDataFeedStore+FeedImageDataLoader.swift */,
+				DE80A72729E53B2B00C842EE /* CoreDataFeedStore+FeedImageDataStore.swift */,
 				DE80A72929E53F3400C842EE /* CoreDataFeedStore+FeedStore.swift */,
 				EF7DF4CC29B7088B00C4DD2D /* FeedStore.xcdatamodeld */,
 			);
@@ -1286,7 +1286,7 @@
 				DEF589392A01C6F800ED3598 /* ResourceLoadingView.swift in Sources */,
 				DEE5EB1329F63316000C9A21 /* ImageComment.swift in Sources */,
 				EFC0EAFC29B81CC6006E271F /* CoreDataHelper.swift in Sources */,
-				DE80A72829E53B2B00C842EE /* CoreDataFeedStore+FeedImageDataLoader.swift in Sources */,
+				DE80A72829E53B2B00C842EE /* CoreDataFeedStore+FeedImageDataStore.swift in Sources */,
 				DE80A71E29E5061B00C842EE /* FeedImageDataStore.swift in Sources */,
 				DE80A78E29E9435C00C842EE /* FeedImageDataCache.swift in Sources */,
 				DE19399F29E22ED7009420B8 /* FeedImagePresenter.swift in Sources */,
