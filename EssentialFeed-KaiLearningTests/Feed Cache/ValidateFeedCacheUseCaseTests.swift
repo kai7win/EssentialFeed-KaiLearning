@@ -154,7 +154,6 @@ class ValidateFeedCacheUseCaseTests:XCTestCase{
     }
     
     private func expect(_ sut: LocalFeedLoader, toCompleteWith expectedResult: Result<Void, Error>, when action: () -> Void, file: StaticString = #file, line: UInt = #line) {
-        let exp = expectation(description: "Wait for load completion")
         
         action()
         
@@ -171,8 +170,6 @@ class ValidateFeedCacheUseCaseTests:XCTestCase{
             XCTFail("Expected result \(expectedResult), got \(receivedResult) instead", file: file, line: line)
         }
         
-       
-        wait(for: [exp], timeout: 1.0)
     }
     
     
