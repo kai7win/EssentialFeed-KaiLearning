@@ -43,6 +43,8 @@
 		DE2580542A1B3A3800CF73AD /* FEED_WITH_LOAD_MORE_ERROR_extraExtraExtraLarge.png in Resources */ = {isa = PBXBuildFile; fileRef = DE2580512A1B3A3800CF73AD /* FEED_WITH_LOAD_MORE_ERROR_extraExtraExtraLarge.png */; };
 		DE2580552A1B3A3800CF73AD /* FEED_WITH_LOAD_MORE_ERROR_light.png in Resources */ = {isa = PBXBuildFile; fileRef = DE2580522A1B3A3800CF73AD /* FEED_WITH_LOAD_MORE_ERROR_light.png */; };
 		DE2580572A1B3A9F00CF73AD /* Paginated.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2580562A1B3A9F00CF73AD /* Paginated.swift */; };
+		DE2580582A1B4B4200CF73AD /* FeedCacheTestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE380229B341C0002849DB /* FeedCacheTestHelpers.swift */; };
+		DE2580592A1B4B6900CF73AD /* FeedCacheTestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE380229B341C0002849DB /* FeedCacheTestHelpers.swift */; };
 		DE68D54229973412008F9F77 /* CacheFeedUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE68D54129973412008F9F77 /* CacheFeedUseCaseTests.swift */; };
 		DE77342F29C7096E00C5A22C /* UITableView+Dequeueing.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE77342E29C7096E00C5A22C /* UITableView+Dequeueing.swift */; };
 		DE77343129C70AD300C5A22C /* UIImageView+Animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE77343029C70AD300C5A22C /* UIImageView+Animations.swift */; };
@@ -1238,6 +1240,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DEA52550298F951C00600B80 /* EssentialFeedAPIEndToEndTests.swift in Sources */,
+				DE2580582A1B4B4200CF73AD /* FeedCacheTestHelpers.swift in Sources */,
 				DEA52557298FB9DA00600B80 /* XCTestCase+MemoryLeakTracking.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1267,6 +1270,7 @@
 				DEE5EB0429F0F016000C9A21 /* SharedTestHelpers.swift in Sources */,
 				DE2580442A1B30EB00CF73AD /* FeedEndpointTests.swift in Sources */,
 				DEE5EB0529F0F030000C9A21 /* XCTestCase+MemoryLeakTracking.swift in Sources */,
+				DE2580592A1B4B6900CF73AD /* FeedCacheTestHelpers.swift in Sources */,
 				DE2580472A1B313300CF73AD /* ImageCommentsEndpointTests.swift in Sources */,
 				DEE5EB2629F661A3000C9A21 /* FeedImageDataMapperTests.swift in Sources */,
 				DEE5EB0129F0EE30000C9A21 /* URLSessionHTTPClientTests.swift in Sources */,
